@@ -1,12 +1,26 @@
 '''Basic Import the basic libraries'''
 
-import logic as lg
+from logic import solveSudoku
 from tkinter import Button,Tk,Entry,LEFT,Frame
 
-inp = []    
-for _ in range(0,9):
-    inp.append([0,0,0,0,0,0,0,0,0]) ## Creating a null nested list ##
-grid = inp.copy()                   ## Creating a replication of null nested list ##
+inp =   [[0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0]]
+grid =   [[0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0]]
 
 if __name__ == "__main__":
     my_font = ("arial",18)
